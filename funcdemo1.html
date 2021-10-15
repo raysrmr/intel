@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <p id="call" style="color: yellow;"></p>
+        <script>
+            function myFunction(){
+                document.write("From the My Function<br>")
+            }
+            function myFunction2(x,y){
+               // document.write(x+y);
+                return x+y;
+            }
+            myFunction();
+            document.getElementById("call").innerHTML =  myFunction2(12,34);
+            myFunction()
+        </script>
+    </body>
+</html>

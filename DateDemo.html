@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function printTime(){
+            document.write(new Date()+"<br>");
+            var date  =  new Date();
+            document.write("Hours : "+ date.getHours()+"<br>");
+            document.write("Min : "+date.getMinutes()+"<br>");
+            document.write(date.getSeconds())
+            setTimeout('printTime()',1000);
+            }
+            printTime();
+        </script>
+    </head>
+</html>

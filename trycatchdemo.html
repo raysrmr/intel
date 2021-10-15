@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function callMe(){
+            try {
+                var fname = document.getElementById("text1").value;
+                var lname = document.getElementById("text2").value;
+                var age = document.getElementById("age").value;
+                var address = document.getElementById("add").value;
+                if(isNaN(age)){
+                    throw "Incorrect_age";
+                }
+                else{
+                    alert(fname+" "+lname+" "+age+" "+address);
+                }               
+            } catch (Incorrect_age) {
+                alert("Enter valid Age");
+            }finally{
+                alert("In Finally Block")
+            }
+            
+        }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            First Name: <input type="text" id="text1" value=""><br><br>
+            Last Name :<input type="text" id="text2" value=""><br><br>
+            Age :<input type="text" id="age" value=""><br><br>
+            Address :<input type="text" id="add" value=""><br><br>
+            <input type="button" value="register" onclick="callMe()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function getVal(){
+                var age = document.getElementById("age").value;
+                if(isNaN(age))  
+                  alert("Please enter valid Number");
+               
+            }
+            function checkName(){
+                var fna = document.getElementById("fname").value;
+                if(fna.length<=0)
+                    alert("Please enter the name");
+            }
+            function getKeyPressVal(){
+                var c = document.getElementById("work").value;
+                //alert("You have entered :"+c);
+                document.getElementById("workval").innerHTML = c;
+            }
+        </script>
+    </head>
+    <body>
+        <p id="workval"></p>
+        <form action="">
+            Name : <input type="text" id="fname" value="" onblur="checkName()"><br><br>
+            Age  : <input type="text" id="age" value=""><br><br>
+            Work : <input type="text" id="work" value="" onkeyup="getKeyPressVal()"><br><br>
+            <input type="button" value="Enter" onclick="getVal()">
+        </form>
+    </body>
+</html>

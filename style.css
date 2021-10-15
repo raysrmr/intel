@@ -1,0 +1,27 @@
+h2{
+    color: red;
+}
+
+.cla{
+    color: brown;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+a:hover{
+    color: yellow;
+}
+
+ul.xe{
+    list-style-type: circle;
+}
+
+ul.ex{
+    list-style: url();
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function callMe(){
+                var val = document.getElementsByName("anc");
+                alert(val[1]);
+                alert(val.length)
+            }
+            function callMeByTag(){
+                var a = document.getElementsByTagName("input");
+                alert("By Tag Name "+a.length);               
+
+            }
+            function callMeByClass(){
+                var b = document.getElementsByClassName("c1");
+                alert(b[1].innerHTML);
+            }
+        </script>
+    </head>
+    <body>
+        <p class="c1">Hello Hai</p>
+        <p class="c1">NewGen</p>
+        <a name="anc" href="boxmodel.html">Link 1 </a>
+        <a name="anc" href="first.html">Link 2 </a>
+        <a name="anc" href="fordemo.html">Link 3 </a>
+        
+
+        <input type="button" value="Click Me" onclick="callMe()">
+        <input type="button" value="Clikc For Tag Name" onclick="callMeByTag()">
+        <input type="button" value="Clikc For Class Name" onclick="callMeByClass()">
+    </body>
+</html>
